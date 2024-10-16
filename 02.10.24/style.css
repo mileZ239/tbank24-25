@@ -7,7 +7,6 @@ body {
 .cards {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
 }
 
 .card {
@@ -19,7 +18,10 @@ body {
     padding: 70px;
     border: 5px solid black;
     border-radius: 50px;
+    display: flex;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
 }
 

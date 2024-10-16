@@ -1,8 +1,18 @@
-const input = document.querySelector("input[type=range]");
-console.log(document.getElementById("box"));
+const popytSlider = document.getElementById("popytSlider");
+const pabloSlider = document.getElementById("pabloSlider");
+const animatedBox = document.getElementById("box");
+const cards = document.querySelectorAll(".card")
 
-input.addEventListener("change", () => {
-    const newSize = input.value;
-    document.getElementById("box").style.width = String(newSize) + "px";
-    document.getElementById("box").style.height = String(newSize) + "px";
+popytSlider.addEventListener("input", () => {
+    const newSize = popytSlider.value;
+    box.style.width = String(newSize) + "px";
+    box.style.height = String(newSize) + "px";
+});
+
+cards.forEach(card => {
+    pabloSlider.addEventListener("input", () => {
+        const newSize = pabloSlider.value;
+        card.style.width = String(newSize) + "px";
+        card.style.height = String(newSize) + "px";
+    });
 });
